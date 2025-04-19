@@ -134,5 +134,7 @@ local function tweenBackward()
     end
 end
 
--- Start the movement
-tweenBackward()
+-- Run forever until Unicorn is found and seat is used
+while not unicornFound or not fallbackUsed do
+    tweenBackward()
+end
